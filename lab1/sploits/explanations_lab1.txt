@@ -1,5 +1,5 @@
-#Zixuan Zhai, 1006979389, shawn.zhai@mail.utoronto.ca
-#Victor Wu, 1007069039, victorzhenchuan.wu@mail.utoronto.ca
+#Zixuan Zhai
+#Victor Wu
 
 target1: The foo function uses strcpy to copy the contents of arg into buf 
          without checking the length of arg. Since buf is only 96 bytes long, 

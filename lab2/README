@@ -1,5 +1,5 @@
-#Zixuan Zhai, 1006979389, shawn.zhai@mail.utoronto.ca
-#Victor Wu, 1007069039, victorzhenchuan.wu@mail.utoronto.ca
+#Zixuan Zhai
+#Victor Wu
 
 Part 1: TOTP (Google Authenticator)
 1.1: Generating an otpauth:// URI
