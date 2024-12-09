@@ -1,0 +1,57 @@
+#Zixuan Zhai, 1006979389, shawn.zhai@mail.utoronto.ca
+#Victor Wu, 1007069039, victorzhenchuan.wu@mail.utoronto.ca
+
+target1: The foo function uses strcpy to copy the contents of arg into buf 
+         without checking the length of arg. Since buf is only 96 bytes long, 
+         a buffer overflow can happen if arg is longer than that.
+
+         I fill the buf with the attack string up to the return address and then
+         overwrite it with the address of the shellcode, which is at the beginning
+         of the attack string. 
+
+target2: The foo function limits the length of the input to 272 characters, 
+         but the actual buf is only 256 bytes in size. This allows overflowing 
+         buf by providing an input with a in-between size. If len and/or i are 
+         overwritten, more memory areas can be overwritten.
+
+         I fill the buf with the attack string up to the return address. I overwrite 
+         len with the size of my attack string and i so that it jumps to the return 
+         address, then I overwrite it with the address of the shellcode, which 
+         is at the beginning of my attack string.
+
+target3: The bar function copies data from arg to targ without adequately 
+         checking if targ has enough space. It is called with a buf of size 64 bytes 
+         in foo, but the limit ltarg is set to 88, allowing for more data than buf 
+         can hold which make overflow possible.
+
+         I fill the buf with the attack string up to the return address and then
+         overwrite it with the address of the shellcode, which is 4 bytes after the 
+         address of attack string due to "AAAA" is at the beginning.
+
+target4: The foo function copies data from arg to buf of 156 bytes. Despite limiting 
+         arg's length to 169 characters, this exceeds buf's capacity which allows 
+         overflowing buf. If len and/or i are overwritten, more memory areas can be 
+         overwritten.
+
+         I fill the buf with the attack string up to the return address. I minus i by
+         4 so that indices 164 to 167 are used twice. The second time is for 
+         overwriting len with max index minus 4. The RA is overwritten with the address 
+         of the shellcode, which is at the beginning of my attack string.
+
+target5: snprintf directly printing a string can be exploited by using %x to move up in
+         stack of snprintf, move into foo, and use %n to write to arbitrary address.
+         Construct an attack string such that format overwrite foo's return address to point
+         to shellcode.
+
+         Through 4 %8x stack reach start of formatString, which stores 4 portions of the
+         return address of foo. Calcuated values are then written into these portions through
+         %hhn, therefore when foo returns it goes to shellcode.
+
+target6: strncpy can set fake tags into the stack and the double free on q can overwrite
+         memory choosen by the attacker.
+
+         The size of attack string is &q - &p. The first 8 bytes are fake tag of p, 
+         then followed by shellcode, the last 8 bytes are the fake tag of q. 
+         The fake tag of p is made up of the instruction of skipping 6 bytes and 6 garbage 
+         bytes. When q is freed the second time, RA is set to p's fake tag and when it 
+         executes, it jumps over the 6 garbage bytes and executes shellcode.

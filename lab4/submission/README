@@ -1,0 +1,25 @@
+#Zixuan Zhai, 1006979389, shawn.zhai@mail.utoronto.ca
+#Victor Wu, 1007069039, victorzhenchuan.wu@mail.utoronto.ca
+
+Part 1
+Q1 run command <dig utoronto.ca A>, the IPv4 address is in the answer section
+Q2 run command <dig utoronto.ca A>, the name servers and their IPv4 addresses is in the additional secion
+Q3 run command <dig utoronto.ca MX>, then run command <dig utoronto-ca.mail.protection.outlook.com A>,
+   the name servers and their IPv4 addresses are in the answer secion
+Q4 add <@127.0.0.1 -p <listen-on port> after 'dig' in each of the above command to verify
+
+Part 2
+A DNS proxy server is built to intercept and forward DNS queries between a client and a specified BIND DNS server. 
+The proxy listens for DNS queries on a designated port, then sends these queries to the BIND server. Upon receiving 
+the DNS responses from the BIND server, the proxy relays these responses back to the original client, making the DNS
+query and response process transparent to the client.
+
+Part 3
+Extending the proxy server in part 2, forge fake DNS replies can be forged when example.com is queried using dig. 
+After forwarding the request to BIND, its response is modified with scapy APIs. The IPv4 address is changed to 1.2.3.4 
+and the name servers are changed to ns.dnslabattacker.net.
+
+Part 4
+send query for non-existing names first. Forge a response that "poisons" example.com by changing the NS region.
+Then  flood it with many spoofed DNS replies each with random transaction ID and hope one is correct. Do this repeatedly
+until success. Then by checking BIND response, the poison attack can be confirmed. 

